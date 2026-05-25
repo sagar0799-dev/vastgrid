@@ -1,0 +1,1652 @@
+{
+  "id": "vastgrid-realm",
+  "realm": "vastgrid-realm",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "resident",
+        "description": "Resident role for home owners"
+      },
+      {
+        "name": "manager",
+        "description": "Manager role for building administration"
+      },
+      {
+        "name": "technician",
+        "description": "Technician role for emergency responders"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "vastgrid-spa-client",
+      "enabled": true,
+      "publicClient": true,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "*"
+      ],
+      "webOrigins": [
+        "*"
+      ],
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "fullScopeAllowed": true,
+      "protocolMappers": [
+        {
+          "name": "picture",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usermodel-attribute-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.attribute": "picture",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "picture",
+            "jsonType.label": "String",
+            "userinfo.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "dev-builder-sub",
+      "username": "builder",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Global",
+      "lastName": "Builder",
+      "attributes": {
+        "picture": [
+          "/avatars/manager.png"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "builder",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "builder"
+      ],
+      "email": "builder@vastgrid.local"
+    },
+    {
+      "id": "dev-watchman-sub",
+      "username": "watch",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Gate",
+      "lastName": "Security",
+      "attributes": {
+        "picture": [
+          "/avatars/technician.png"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "watch",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "watchman"
+      ],
+      "email": "watch@vastgrid.local"
+    },
+    {
+      "username": "sagar",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Sagar",
+      "lastName": "Vyavhare",
+      "attributes": {
+        "picture": [
+          "/avatars/sagar.png"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "402",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "sagar@vastgrid.local"
+    },
+    {
+      "username": "admin",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Admin",
+      "lastName": "Manager",
+      "attributes": {
+        "picture": [
+          "/avatars/manager.png"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "admin@vastgrid.local"
+    },
+    {
+      "username": "tech",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Marcus",
+      "lastName": "Vance",
+      "attributes": {
+        "picture": [
+          "/avatars/technician.png"
+        ]
+      },
+      "credentials": [
+        {
+          "type": "password",
+          "value": "tech",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "technician"
+      ],
+      "email": "tech@vastgrid.local"
+    },
+    {
+      "username": "bobby",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Bobby",
+      "lastName": "Resident",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test1",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "bobby@vastgrid.local"
+    },
+    {
+      "username": "helen",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Helen",
+      "lastName": "Manager",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test2",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "helen@vastgrid.local"
+    },
+    {
+      "username": "oliver",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Oliver",
+      "lastName": "Technician",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test3",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "technician"
+      ],
+      "email": "oliver@vastgrid.local"
+    },
+    {
+      "id": "manager-1-sso-uuid",
+      "username": "manager1",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager1First",
+      "lastName": "Manager1Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager1@vastgrid.local"
+    },
+    {
+      "id": "manager-2-sso-uuid",
+      "username": "manager2",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager2First",
+      "lastName": "Manager2Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager2@vastgrid.local"
+    },
+    {
+      "id": "manager-3-sso-uuid",
+      "username": "manager3",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager3First",
+      "lastName": "Manager3Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager3@vastgrid.local"
+    },
+    {
+      "id": "manager-4-sso-uuid",
+      "username": "manager4",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager4First",
+      "lastName": "Manager4Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager4@vastgrid.local"
+    },
+    {
+      "id": "manager-5-sso-uuid",
+      "username": "manager5",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager5First",
+      "lastName": "Manager5Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager5@vastgrid.local"
+    },
+    {
+      "id": "manager-6-sso-uuid",
+      "username": "manager6",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager6First",
+      "lastName": "Manager6Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager6@vastgrid.local"
+    },
+    {
+      "id": "manager-7-sso-uuid",
+      "username": "manager7",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager7First",
+      "lastName": "Manager7Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager7@vastgrid.local"
+    },
+    {
+      "id": "manager-8-sso-uuid",
+      "username": "manager8",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager8First",
+      "lastName": "Manager8Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager8@vastgrid.local"
+    },
+    {
+      "id": "manager-9-sso-uuid",
+      "username": "manager9",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager9First",
+      "lastName": "Manager9Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager9@vastgrid.local"
+    },
+    {
+      "id": "manager-10-sso-uuid",
+      "username": "manager10",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager10First",
+      "lastName": "Manager10Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager10@vastgrid.local"
+    },
+    {
+      "id": "manager-11-sso-uuid",
+      "username": "manager11",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager11First",
+      "lastName": "Manager11Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager11@vastgrid.local"
+    },
+    {
+      "id": "manager-12-sso-uuid",
+      "username": "manager12",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager12First",
+      "lastName": "Manager12Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager12@vastgrid.local"
+    },
+    {
+      "id": "manager-13-sso-uuid",
+      "username": "manager13",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager13First",
+      "lastName": "Manager13Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager13@vastgrid.local"
+    },
+    {
+      "id": "manager-14-sso-uuid",
+      "username": "manager14",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager14First",
+      "lastName": "Manager14Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager14@vastgrid.local"
+    },
+    {
+      "id": "manager-15-sso-uuid",
+      "username": "manager15",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Manager15First",
+      "lastName": "Manager15Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "manager123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "manager"
+      ],
+      "email": "manager15@vastgrid.local"
+    },
+    {
+      "id": "resident-1-sso-uuid",
+      "username": "resident1",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident1First",
+      "lastName": "Resident1Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident1@vastgrid.local"
+    },
+    {
+      "id": "resident-2-sso-uuid",
+      "username": "resident2",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident2First",
+      "lastName": "Resident2Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident2@vastgrid.local"
+    },
+    {
+      "id": "resident-3-sso-uuid",
+      "username": "resident3",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident3First",
+      "lastName": "Resident3Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident3@vastgrid.local"
+    },
+    {
+      "id": "resident-4-sso-uuid",
+      "username": "resident4",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident4First",
+      "lastName": "Resident4Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident4@vastgrid.local"
+    },
+    {
+      "id": "resident-5-sso-uuid",
+      "username": "resident5",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident5First",
+      "lastName": "Resident5Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident5@vastgrid.local"
+    },
+    {
+      "id": "resident-6-sso-uuid",
+      "username": "resident6",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident6First",
+      "lastName": "Resident6Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident6@vastgrid.local"
+    },
+    {
+      "id": "resident-7-sso-uuid",
+      "username": "resident7",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident7First",
+      "lastName": "Resident7Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident7@vastgrid.local"
+    },
+    {
+      "id": "resident-8-sso-uuid",
+      "username": "resident8",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident8First",
+      "lastName": "Resident8Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident8@vastgrid.local"
+    },
+    {
+      "id": "resident-9-sso-uuid",
+      "username": "resident9",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident9First",
+      "lastName": "Resident9Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident9@vastgrid.local"
+    },
+    {
+      "id": "resident-10-sso-uuid",
+      "username": "resident10",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident10First",
+      "lastName": "Resident10Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident10@vastgrid.local"
+    },
+    {
+      "id": "resident-11-sso-uuid",
+      "username": "resident11",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident11First",
+      "lastName": "Resident11Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident11@vastgrid.local"
+    },
+    {
+      "id": "resident-12-sso-uuid",
+      "username": "resident12",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident12First",
+      "lastName": "Resident12Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident12@vastgrid.local"
+    },
+    {
+      "id": "resident-13-sso-uuid",
+      "username": "resident13",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident13First",
+      "lastName": "Resident13Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident13@vastgrid.local"
+    },
+    {
+      "id": "resident-14-sso-uuid",
+      "username": "resident14",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident14First",
+      "lastName": "Resident14Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident14@vastgrid.local"
+    },
+    {
+      "id": "resident-15-sso-uuid",
+      "username": "resident15",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident15First",
+      "lastName": "Resident15Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident15@vastgrid.local"
+    },
+    {
+      "id": "resident-16-sso-uuid",
+      "username": "resident16",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident16First",
+      "lastName": "Resident16Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident16@vastgrid.local"
+    },
+    {
+      "id": "resident-17-sso-uuid",
+      "username": "resident17",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident17First",
+      "lastName": "Resident17Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident17@vastgrid.local"
+    },
+    {
+      "id": "resident-18-sso-uuid",
+      "username": "resident18",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident18First",
+      "lastName": "Resident18Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident18@vastgrid.local"
+    },
+    {
+      "id": "resident-19-sso-uuid",
+      "username": "resident19",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident19First",
+      "lastName": "Resident19Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident19@vastgrid.local"
+    },
+    {
+      "id": "resident-20-sso-uuid",
+      "username": "resident20",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident20First",
+      "lastName": "Resident20Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident20@vastgrid.local"
+    },
+    {
+      "id": "resident-21-sso-uuid",
+      "username": "resident21",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident21First",
+      "lastName": "Resident21Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident21@vastgrid.local"
+    },
+    {
+      "id": "resident-22-sso-uuid",
+      "username": "resident22",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident22First",
+      "lastName": "Resident22Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident22@vastgrid.local"
+    },
+    {
+      "id": "resident-23-sso-uuid",
+      "username": "resident23",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident23First",
+      "lastName": "Resident23Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident23@vastgrid.local"
+    },
+    {
+      "id": "resident-24-sso-uuid",
+      "username": "resident24",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident24First",
+      "lastName": "Resident24Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident24@vastgrid.local"
+    },
+    {
+      "id": "resident-25-sso-uuid",
+      "username": "resident25",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident25First",
+      "lastName": "Resident25Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident25@vastgrid.local"
+    },
+    {
+      "id": "resident-26-sso-uuid",
+      "username": "resident26",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident26First",
+      "lastName": "Resident26Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident26@vastgrid.local"
+    },
+    {
+      "id": "resident-27-sso-uuid",
+      "username": "resident27",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident27First",
+      "lastName": "Resident27Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident27@vastgrid.local"
+    },
+    {
+      "id": "resident-28-sso-uuid",
+      "username": "resident28",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident28First",
+      "lastName": "Resident28Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident28@vastgrid.local"
+    },
+    {
+      "id": "resident-29-sso-uuid",
+      "username": "resident29",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident29First",
+      "lastName": "Resident29Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident29@vastgrid.local"
+    },
+    {
+      "id": "resident-30-sso-uuid",
+      "username": "resident30",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident30First",
+      "lastName": "Resident30Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident30@vastgrid.local"
+    },
+    {
+      "id": "resident-31-sso-uuid",
+      "username": "resident31",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident31First",
+      "lastName": "Resident31Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident31@vastgrid.local"
+    },
+    {
+      "id": "resident-32-sso-uuid",
+      "username": "resident32",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident32First",
+      "lastName": "Resident32Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident32@vastgrid.local"
+    },
+    {
+      "id": "resident-33-sso-uuid",
+      "username": "resident33",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident33First",
+      "lastName": "Resident33Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident33@vastgrid.local"
+    },
+    {
+      "id": "resident-34-sso-uuid",
+      "username": "resident34",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident34First",
+      "lastName": "Resident34Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident34@vastgrid.local"
+    },
+    {
+      "id": "resident-35-sso-uuid",
+      "username": "resident35",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident35First",
+      "lastName": "Resident35Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident35@vastgrid.local"
+    },
+    {
+      "id": "resident-36-sso-uuid",
+      "username": "resident36",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident36First",
+      "lastName": "Resident36Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident36@vastgrid.local"
+    },
+    {
+      "id": "resident-37-sso-uuid",
+      "username": "resident37",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident37First",
+      "lastName": "Resident37Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident37@vastgrid.local"
+    },
+    {
+      "id": "resident-38-sso-uuid",
+      "username": "resident38",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident38First",
+      "lastName": "Resident38Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident38@vastgrid.local"
+    },
+    {
+      "id": "resident-39-sso-uuid",
+      "username": "resident39",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident39First",
+      "lastName": "Resident39Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident39@vastgrid.local"
+    },
+    {
+      "id": "resident-40-sso-uuid",
+      "username": "resident40",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident40First",
+      "lastName": "Resident40Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident40@vastgrid.local"
+    },
+    {
+      "id": "resident-41-sso-uuid",
+      "username": "resident41",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident41First",
+      "lastName": "Resident41Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident41@vastgrid.local"
+    },
+    {
+      "id": "resident-42-sso-uuid",
+      "username": "resident42",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident42First",
+      "lastName": "Resident42Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident42@vastgrid.local"
+    },
+    {
+      "id": "resident-43-sso-uuid",
+      "username": "resident43",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident43First",
+      "lastName": "Resident43Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident43@vastgrid.local"
+    },
+    {
+      "id": "resident-44-sso-uuid",
+      "username": "resident44",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident44First",
+      "lastName": "Resident44Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident44@vastgrid.local"
+    },
+    {
+      "id": "resident-45-sso-uuid",
+      "username": "resident45",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident45First",
+      "lastName": "Resident45Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident45@vastgrid.local"
+    },
+    {
+      "id": "resident-46-sso-uuid",
+      "username": "resident46",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident46First",
+      "lastName": "Resident46Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident46@vastgrid.local"
+    },
+    {
+      "id": "resident-47-sso-uuid",
+      "username": "resident47",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident47First",
+      "lastName": "Resident47Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident47@vastgrid.local"
+    },
+    {
+      "id": "resident-48-sso-uuid",
+      "username": "resident48",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident48First",
+      "lastName": "Resident48Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident48@vastgrid.local"
+    },
+    {
+      "id": "resident-49-sso-uuid",
+      "username": "resident49",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident49First",
+      "lastName": "Resident49Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident49@vastgrid.local"
+    },
+    {
+      "id": "resident-50-sso-uuid",
+      "username": "resident50",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident50First",
+      "lastName": "Resident50Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident50@vastgrid.local"
+    },
+    {
+      "id": "resident-51-sso-uuid",
+      "username": "resident51",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident51First",
+      "lastName": "Resident51Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident51@vastgrid.local"
+    },
+    {
+      "id": "resident-52-sso-uuid",
+      "username": "resident52",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident52First",
+      "lastName": "Resident52Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident52@vastgrid.local"
+    },
+    {
+      "id": "resident-53-sso-uuid",
+      "username": "resident53",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident53First",
+      "lastName": "Resident53Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident53@vastgrid.local"
+    },
+    {
+      "id": "resident-54-sso-uuid",
+      "username": "resident54",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident54First",
+      "lastName": "Resident54Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident54@vastgrid.local"
+    },
+    {
+      "id": "resident-55-sso-uuid",
+      "username": "resident55",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident55First",
+      "lastName": "Resident55Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident55@vastgrid.local"
+    },
+    {
+      "id": "resident-56-sso-uuid",
+      "username": "resident56",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident56First",
+      "lastName": "Resident56Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident56@vastgrid.local"
+    },
+    {
+      "id": "resident-57-sso-uuid",
+      "username": "resident57",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident57First",
+      "lastName": "Resident57Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident57@vastgrid.local"
+    },
+    {
+      "id": "resident-58-sso-uuid",
+      "username": "resident58",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident58First",
+      "lastName": "Resident58Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident58@vastgrid.local"
+    },
+    {
+      "id": "resident-59-sso-uuid",
+      "username": "resident59",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident59First",
+      "lastName": "Resident59Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident59@vastgrid.local"
+    },
+    {
+      "id": "resident-60-sso-uuid",
+      "username": "resident60",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Resident60First",
+      "lastName": "Resident60Last",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "resident123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "resident"
+      ],
+      "email": "resident60@vastgrid.local"
+    }
+  ]
+}

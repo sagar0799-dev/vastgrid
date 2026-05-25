@@ -1,0 +1,123 @@
+{
+  "name": "vastgrid-developer-agent",
+  "version": "1.0.0",
+  "description": "Distributed developer agent for managing, building, and deploying the VastGrid apartment management system, including local Aspire integrations and the AuraHome premium user-facing service portal.",
+  "author": {
+    "name": "Antigravity",
+    "role": "Agentic AI Developer"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "name": "aspire",
+        "path": "./skills/aspire/SKILL.md",
+        "description": "Operate and orchestrate .NET Aspire distributed application hosts, query resource telemetry, and handle service configurations."
+      },
+      {
+        "name": "aspireify",
+        "path": "./skills/aspireify/SKILL.md",
+        "description": "One-time bootstrap coordinator to model and connect legacy service ports, databases, and variables into Aspire hosts."
+      }
+    ],
+    "agents": [
+      {
+        "name": "System Architect",
+        "path": "./prompts/architect.prompt.md",
+        "description": "Designs system boundaries, orchestrates Aspire services, and ensures clean decoupling between layers."
+      },
+      {
+        "name": "UI & UX Designer",
+        "path": "./prompts/ui-ux-agent.prompt.md",
+        "description": "Validates visual elements, Tailwind configurations, responsive breaking grids, and Aura Premium Light theme compliance."
+      },
+      {
+        "name": "Backend Developer",
+        "path": "./prompts/backend-dev.prompt.md",
+        "description": "Implements .NET Core Web APIs using Clean Architecture, Repositories, and Services."
+      },
+      {
+        "name": "Frontend Developer",
+        "path": "./prompts/frontend-dev.prompt.md",
+        "description": "Builds React 19 components with strict UI/Logic separation, URL-driven state, and premium responsiveness."
+      },
+      {
+        "name": "Cross-Device UX Auditor",
+        "path": "./prompts/ux-auditor.prompt.md",
+        "description": "Identifies visual regressions, duplicate renders, and layout collisions across responsive breakpoints."
+      },
+      {
+        "name": "Build & Compile Verifier",
+        "path": "./prompts/build-verifier.prompt.md",
+        "description": "Ensures zero-failure compilation by running dotnet and npm build checks after major changes."
+      },
+      {
+        "name": "React & .NET Code Reviewer",
+        "path": "./prompts/code-reviewer-reviver.prompt.md",
+        "description": "Audits, refactors, and decouples code to enforce 100% architectural and type-strict compliance."
+      },
+      {
+        "name": "Scenarios Validator",
+        "path": "./prompts/scenarios-validator.prompt.md",
+        "description": "Validates boundary states, inputs, OIDC Keycloak conflict exceptions, and functional integration pathways."
+      }
+    ],
+    "workflow": {
+      "hierarchy": [
+        "System Architect",
+        "UI & UX Designer",
+        "Backend Developer",
+        "Frontend Developer",
+        "Cross-Device UX Auditor",
+        "Build & Compile Verifier",
+        "React & .NET Code Reviewer"
+      ],
+      "description": "Agents must execute in this order for any new feature or major refactor to ensure design-first, architecture-compliant delivery."
+    },
+    "applications": [
+      {
+        "name": "AuraHome Portal",
+        "type": "Single Page Application (React + Vite + TypeScript)",
+        "path": "./frontend",
+        "entry_point": "./frontend/src/App.tsx",
+        "styles": "./frontend/src/App.css",
+        "description": "An ultra-premium light-themed real-time apartment emergency visitor and technician dispatch management interface."
+      },
+      {
+        "name": "VastGrid AppHost",
+        "type": ".NET Aspire Orchestrator",
+        "path": "./VastGrid.AppHost",
+        "entry_point": "./VastGrid.AppHost/Program.cs",
+        "description": "Aspire-orchestrated microservices cluster and host system."
+      }
+    ],
+    "actions": [
+      {
+        "name": "run_frontend",
+        "description": "Launches the AuraHome premium React UI dev server.",
+        "command": "npm run dev",
+        "directory": "./frontend"
+      },
+      {
+        "name": "run_orchestrator",
+        "description": "Launches the distributed backend and services via Aspire.",
+        "command": "aspire start",
+        "directory": "."
+      }
+    ]
+  },
+  "metadata": {
+    "theme": "Light Mode (Premium glassmorphism, Outfit/Inter typography, harmonious HSL palettes)",
+    "rules_and_guidelines": "./instructions.md",
+    "target_frameworks": [
+      "React 19",
+      "Vite 6",
+      "TypeScript 5",
+      ".NET 9 (Aspire AppHost)"
+    ],
+    "credentials_hints": {
+      "Resident": "402",
+      "Manager": "admin",
+      "Technician": "tech"
+    }
+  }
+}

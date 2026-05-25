@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|c:\\users\\sagar vyavhare\\vastgrid\\vastgrid\\vastgrid.server\\controllers\\managerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|solutionrelative:vastgrid.server\\controllers\\managerdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|c:\\users\\sagar vyavhare\\vastgrid\\vastgrid\\vastgrid.server\\controllers\\apartmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|solutionrelative:vastgrid.server\\controllers\\apartmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|c:\\users\\sagar vyavhare\\vastgrid\\vastgrid\\vastgrid.server\\data\\vastgriddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|solutionrelative:vastgrid.server\\data\\vastgriddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|c:\\users\\sagar vyavhare\\vastgrid\\vastgrid\\vastgrid.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B94EFB-C946-4186-9781-B2A6B9ED59EA}|VastGrid.Server\\VastGrid.Server.csproj|solutionrelative:vastgrid.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1904E477-B8D6-43FC-ADF6-F91088F50AEC}|frontend\\frontend.esproj|c:\\users\\sagar vyavhare\\vastgrid\\vastgrid\\frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{1904E477-B8D6-43FC-ADF6-F91088F50AEC}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagerDashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Controllers\\ManagerDashboardController.cs",
+              "RelativeDocumentMoniker": "VastGrid.Server\\Controllers\\ManagerDashboardController.cs",
+              "ToolTip": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Controllers\\ManagerDashboardController.cs",
+              "RelativeToolTip": "VastGrid.Server\\Controllers\\ManagerDashboardController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T19:27:01.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApartmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Controllers\\ApartmentsController.cs",
+              "RelativeDocumentMoniker": "VastGrid.Server\\Controllers\\ApartmentsController.cs",
+              "ToolTip": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Controllers\\ApartmentsController.cs",
+              "RelativeToolTip": "VastGrid.Server\\Controllers\\ApartmentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T18:20:35.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VastGridDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Data\\VastGridDbContext.cs",
+              "RelativeDocumentMoniker": "VastGrid.Server\\Data\\VastGridDbContext.cs",
+              "ToolTip": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Data\\VastGridDbContext.cs",
+              "RelativeToolTip": "VastGrid.Server\\Data\\VastGridDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T18:19:40.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\frontend\\src\\App.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\frontend\\src\\App.tsx",
+              "RelativeToolTip": "frontend\\src\\App.tsx",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2026-05-22T00:03:10.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Program.cs",
+              "RelativeDocumentMoniker": "VastGrid.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Sagar vyavhare\\VastGrid\\VastGrid\\VastGrid.Server\\Program.cs",
+              "RelativeToolTip": "VastGrid.Server\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T23:05:03.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
